@@ -10,6 +10,8 @@ public class InsertionSortMain {
 		
 		Scanner sc = new Scanner(System.in);
 		
+		System.out.println("Introduce " + tam + " notas, pulsa intro al final de cada una, y los decimales con comas:");
+		
 		for(int i = 0; i < tam; i++) {
 			float numero = sc.nextFloat();
 			if(numero > 10 || numero < 0) {
@@ -28,6 +30,8 @@ public class InsertionSortMain {
 			}
 			entrada[j + 1] = x;
 		}
+		
+		System.out.println("Las notas ordenadas de menor a mayor son:");
 		
 		for(int i = 0; i < tam; i++) {
 			System.out.print(entrada[i] + " ");
